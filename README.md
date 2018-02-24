@@ -14,12 +14,15 @@ Objects must come from one direction until the 'wave' is done. Player must be in
 
 Scores are given based on the number of obstacles the player can avoid. 
 
+------
+
 Version 2
 Everything in Version 1 plus the following.
 The boat tilts. When the objects are coming in from -> or <- the boat tilts accordingly.
 
 Objects may now include other things such as rum bottle, other pirates, mates, etc..
 
+------
 Version 3
 Include the down button as control
 
