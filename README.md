@@ -1,7 +1,6 @@
 # GameJam04
 Float the Boat (Temp name)
-I am testing the merge component ::::: This is BRIAR TEST 7
-
+I am testing the merge component ::::: This is BRIAR TEST 8 AGAIN
 This is a simple game created by the DC team at GameJam 04. The theme for the year is pirate.
 
 Our game: 
