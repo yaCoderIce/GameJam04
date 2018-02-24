@@ -7,31 +7,66 @@ using UnityEngine;
 
 public class PlankMechanics : MonoBehaviour {
 
-	public int m_sway;
-	public bool m_left;
+	public float m_sway;
+	public int m_swingCounter;
 
-	GameObject cube;
+	private bool moveLeft;
+
+	Rigidbody rigidbody;
+
+	private int counter;
+	private float modifier;
+
+	private int rockingCount;
 
     // Use this for initialization
     void Start () {
-		m_sway = 15;
-		m_left = false;
+		counter = 0;
+		m_sway = .55f;
+		m_swingCounter = 0;
+		
+		moveLeft = true;
 
-		this.cube = GameObject.Find("Cube");
+		rockingCount = -15;
+
+		modifier = -1f;
+		//this.rigidbody = GetComponent<Rigidbody>();
 		//this.buddyGuy = transform.Find("ThirdPersonController");
+		//this.rigidbody.AddForce(Vector3.up * 10f);
+
+		transform.Rotate(0,0,m_sway*modifier);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log(transform.tag);
-		//transform.position += Vector3.forward * (Time.deltaTime);
-		if (m_left){
 			
+		
+		
+		counter += 1;
+		if (counter % 2 == 0){
 			
-		} else {
-			//transform.position -= Vector3.forward * (m_sway * Time.deltaTime);
+			Debug.Log("Swing Counter :" + m_swingCounter + " modifier :" + modifier);
+			if (moveLeft){
+				m_swingCounter++;
+				if (m_swingCounter > (-1 * rockingCount)){
+					moveLeft = false;
+					modifier = 1f;
+				} 
+			} else {
+
+				m_swingCounter--;
+				if (m_swingCounter < rockingCount){
+					moveLeft = true;
+					modifier = -1f;
+				}
+			}
+
+			
+			//transform.Translate(Vector3.right * m_sway *modifier);
+			//transform.Rotate(2 * modifier,0,0);
+			transform.Rotate(0,0,m_sway*modifier);
 		}
-		//m_left = !m_left;
+		
 	}
 
 }
