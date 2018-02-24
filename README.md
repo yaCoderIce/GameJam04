@@ -24,6 +24,11 @@ Version 3
 Include the down button as control
 
 Objects now come in as flying, the down button allows the player to duck.
+<<<<<<< HEAD
 Samson Changed. can you see this?
 
 This is a test!
+=======
+
+Test merge 
+>>>>>>> master
