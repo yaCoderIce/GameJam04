@@ -209,7 +209,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60985aeae107b9347b25acf54133bde7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TestVariable: 0
+  m_sway: 0
+  m_left: 0
 --- !u!1001 &593869585
 Prefab:
   m_ObjectHideFlags: 0
@@ -269,6 +270,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c88f2fc8131a14b96881cc609698a538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &593869588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 593869586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b16b2319d858482b92f4b2b21f73ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &608867414
