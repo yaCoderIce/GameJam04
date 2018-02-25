@@ -154,7 +154,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4726507668157574, guid: 2cf0e8deac73a134fae84b3f6cab9be7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.42
+      value: -1.4
       objectReference: {fileID: 0}
     - target: {fileID: 4726507668157574, guid: 2cf0e8deac73a134fae84b3f6cab9be7, type: 2}
       propertyPath: m_LocalPosition.z
@@ -189,7 +189,13 @@ Prefab:
       propertyPath: treasContainer
       value: 
       objectReference: {fileID: 4444472}
-    m_RemovedComponents: []
+    - target: {fileID: 65474889689976052, guid: 2cf0e8deac73a134fae84b3f6cab9be7,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 65474889689976052, guid: 2cf0e8deac73a134fae84b3f6cab9be7, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 2cf0e8deac73a134fae84b3f6cab9be7, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &197765582
@@ -717,6 +723,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1245656496 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1264853678383388, guid: 2cf0e8deac73a134fae84b3f6cab9be7,
+    type: 2}
+  m_PrefabInternal: {fileID: 100784472}
+--- !u!135 &1245656498
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1245656496}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 8
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1264065984
 GameObject:
   m_ObjectHideFlags: 0
