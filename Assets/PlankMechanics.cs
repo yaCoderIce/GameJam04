@@ -21,12 +21,12 @@ public class PlankMechanics : MonoBehaviour {
     // Use this for initialization
     void Start () {
 		counter = 0;
-		m_sway = .55f;
+		m_sway = .05f;
 		m_swingCounter = 0;
 		
 		moveLeft = true;
 
-		rockingCount = 0;
+		rockingCount = -65;
 
 		modifier = -1f;
 		//this.rigidbody = GetComponent<Rigidbody>();
