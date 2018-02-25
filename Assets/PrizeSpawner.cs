@@ -16,10 +16,10 @@ public class PrizeSpawner : MonoBehaviour {
 	
 	void Spawn(){
 		int spawnPointIndex = Random.Range(0, spawnPoints.Length);
-		GameObject newCrate = Instantiate(cratePreFab,spawnPoints[spawnPointIndex].position,spawnPoints[spawnPointIndex].rotation);
-		newCrate.name="crate";
-		//newCrate.transform.parent = newCrate.Transform;
-		
+		Transform spawnPoint = spawnPoints[spawnPointIndex];
+		GameObject nCrate = Instantiate(cratePreFab,spawnPoint.position,spawnPoint.rotation);
+		nCrate.name="crate";
+		nCrate.transform.parent = cContainer.transform;
 	}
 
 	// Update is called once per frame
