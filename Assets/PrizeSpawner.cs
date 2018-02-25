@@ -15,6 +15,7 @@ public class PrizeSpawner : MonoBehaviour {
 	}
 	
 	void Spawn(){
+		spawnTimeDelay=Random.Range(5,10);
 		int spawnPointIndex = Random.Range(0, spawnPoints.Length);
 		Transform spawnPoint = spawnPoints[spawnPointIndex];
 		GameObject nCrate = Instantiate(cratePreFab,spawnPoint.position,spawnPoint.rotation);
