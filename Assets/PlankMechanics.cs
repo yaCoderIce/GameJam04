@@ -26,7 +26,7 @@ public class PlankMechanics : MonoBehaviour {
 		
 		moveLeft = true;
 
-		rockingCount = -15;
+		rockingCount = 0;
 
 		modifier = -1f;
 		//this.rigidbody = GetComponent<Rigidbody>();
