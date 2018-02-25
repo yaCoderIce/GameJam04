@@ -43,11 +43,12 @@ public class PlankMechanics : MonoBehaviour {
 
 		//Debug.Log(this.textTest.name);
 		//this.textTest.SetActive(!this.textTest.activeSelf);
+		//this.textTest.transform.Rotate(10,0,0);
 		
 		counter += 1;
 		if (counter % 2 == 0){
 			
-			Debug.Log("Swing Counter :" + m_swingCounter + " modifier :" + modifier);
+			//Debug.Log("Swing Counter :" + m_swingCounter + " modifier :" + modifier);
 			if (moveLeft){
 				m_swingCounter++;
 				if (m_swingCounter > (-1 * rockingCount)){
