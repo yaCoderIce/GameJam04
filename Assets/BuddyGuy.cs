@@ -19,6 +19,7 @@ public class BuddyGuy : MonoBehaviour {
 	void OnCollisionEnter (Collision col){
 
 		Debug.Log("Collided!");
+		/*
 		if (col.gameObject.name == "crate"){
 			GameObject chest = GameObject.Find("treasure_chest_closed");
 			Debug.Log(col.gameObject.transform.position);
@@ -44,5 +45,6 @@ public class BuddyGuy : MonoBehaviour {
 			this.treasureScore++;
 			Destroy(col.gameObject);
 		}
+		*/
 	}
 }
