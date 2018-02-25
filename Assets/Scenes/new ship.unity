@@ -126,7 +126,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4726507668157574, guid: 2cf0e8deac73a134fae84b3f6cab9be7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.42
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 4726507668157574, guid: 2cf0e8deac73a134fae84b3f6cab9be7, type: 2}
       propertyPath: m_LocalPosition.z
@@ -156,9 +156,52 @@ Prefab:
       propertyPath: m_Name
       value: crate
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 65474889689976052, guid: 2cf0e8deac73a134fae84b3f6cab9be7,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 65474889689976052, guid: 2cf0e8deac73a134fae84b3f6cab9be7,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 65474889689976052, guid: 2cf0e8deac73a134fae84b3f6cab9be7,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451623676055536, guid: 2cf0e8deac73a134fae84b3f6cab9be7, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65564437592578502, guid: 2cf0e8deac73a134fae84b3f6cab9be7,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: b63570b50eae35749b913f0230139233,
+        type: 2}
+    m_RemovedComponents:
+    - {fileID: 65474889689976052, guid: 2cf0e8deac73a134fae84b3f6cab9be7, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 2cf0e8deac73a134fae84b3f6cab9be7, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &123710770 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1264853678383388, guid: 2cf0e8deac73a134fae84b3f6cab9be7,
+    type: 2}
+  m_PrefabInternal: {fileID: 100784472}
+--- !u!135 &123710773
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 123710770}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 6
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &202667733
 GameObject:
   m_ObjectHideFlags: 0
