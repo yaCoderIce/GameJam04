@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class BuddyGuy : MonoBehaviour {
 
-	public int treasureScore;
+	public static int treasureScore;
     // Use this for initialization
     void Start () {
 		treasureScore = 0;
