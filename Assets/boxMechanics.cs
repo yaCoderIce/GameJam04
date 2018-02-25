@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class boxMechanics : MonoBehaviour {
-	public Transform treasContainer; 
 	// Use this for initialization
 	void Start () {
 		
@@ -32,8 +31,6 @@ public class boxMechanics : MonoBehaviour {
 				
 				GameObject newChest = Instantiate(chest ,pos, boo);
 				newChest.name = "treasure_chest_closed";
-				newChest.transform.parent = treasContainer.transform;
-
 
 				//new WaitForSeconds(1);
 			}
