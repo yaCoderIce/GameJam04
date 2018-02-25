@@ -45,7 +45,7 @@ public class PlankMechanics : MonoBehaviour {
 		counter += 1;
 		if (counter % 2 == 0){
 			
-			Debug.Log("Swing Counter :" + m_swingCounter + " modifier :" + modifier);
+			//Debug.Log("Swing Counter :" + m_swingCounter + " modifier :" + modifier);
 			if (moveLeft){
 				m_swingCounter++;
 				if (m_swingCounter > (-1 * rockingCount)){
