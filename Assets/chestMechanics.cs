@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class chestMechanics : MonoBehaviour {
+    
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -18,6 +19,7 @@ public class chestMechanics : MonoBehaviour {
 		//Debug.Log(col.gameObject.name);
 		if (col.gameObject.name.Equals("FPSController")){
 			Debug.Log(this.transform.parent.name);	
+			BuddyGuy.treasureScore++;
 			GameObject chest = this.transform.parent.gameObject;
 			Destroy(chest);
 		}
