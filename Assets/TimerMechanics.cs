@@ -8,25 +8,26 @@ public class TimerMechanics : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		this.timer = 90f;
+		this.timer = 45f;
 		this.threeDText = GetComponent<TextMesh>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		this.timer -= Time.deltaTime;
+		if (this.timer >= 0) {
+			this.timer -= Time.deltaTime;
 
-		float displayTimer = Mathf.Round(timer);
+			float displayTimer = Mathf.Round(timer);
 
-		string alignmentText = "";
+			string alignmentText = "";
 
-		if (displayTimer < 10){
-			alignmentText = "000";
-		} else if (displayTimer < 100){
-			alignmentText = "00";
-		} 
+			if (displayTimer < 10){
+				alignmentText = "000";
+			} else if (displayTimer < 100){
+				alignmentText = "00";
+			} 
 
-		this.threeDText.text = "Time Remaining: " + alignmentText + displayTimer + "s";
-
+			this.threeDText.text = "Time Remaining: " + alignmentText + displayTimer + "s";
+		}
 	}
 }
