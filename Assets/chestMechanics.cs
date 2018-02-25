@@ -15,7 +15,13 @@ public class chestMechanics : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider col){
-		Debug.Log(this.transform.parent.name);
+		//Debug.Log(col.gameObject.name);
+		if (col.gameObject.name.Equals("FPSController")){
+			Debug.Log(this.transform.parent.name);	
+			GameObject chest = this.transform.parent.gameObject;
+			Destroy(chest);
+		}
+		
 		
 		
 	}
