@@ -444,7 +444,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
@@ -459,6 +459,7 @@ GameObject:
   - component: {fileID: 1030329106}
   - component: {fileID: 1030329108}
   - component: {fileID: 1030329107}
+  - component: {fileID: 1030329109}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -492,6 +493,17 @@ SphereCollider:
   m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1030329108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1030329105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0569ee50b478c8c40a9c5b5ab33bd872, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1030329109
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -908,22 +920,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.9999993, y: 0, z: 1.9999988}
   m_Center: {x: -0.00000032782555, y: 0, z: 0.00000032782555}
---- !u!1 &2042704517 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-  m_PrefabInternal: {fileID: 1012772123}
---- !u!114 &2042704523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2042704517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c88f2fc8131a14b96881cc609698a538, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treasureScore: 0
 --- !u!1001 &2060620454
 Prefab:
   m_ObjectHideFlags: 0
