@@ -126,7 +126,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4726507668157574, guid: 2cf0e8deac73a134fae84b3f6cab9be7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.25
+      value: 4.46
       objectReference: {fileID: 0}
     - target: {fileID: 4726507668157574, guid: 2cf0e8deac73a134fae84b3f6cab9be7, type: 2}
       propertyPath: m_LocalPosition.z
@@ -200,7 +200,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 6
+  m_Radius: 8
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &202667733
 GameObject:
