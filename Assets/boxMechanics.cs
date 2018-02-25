@@ -15,7 +15,7 @@ public class boxMechanics : MonoBehaviour {
 	}
 
 	void OnTriggerEnter (Collider col){
-		if (col.gameObject.name == "FPSController"){
+		if (col.gameObject.name.Equals("FPSController")){
 			GameObject chest = GameObject.Find("treasure_chest_closed");
 			
 			int numOfTreasures = (int) UnityEngine.Random.Range(1.0f,8.0f);
