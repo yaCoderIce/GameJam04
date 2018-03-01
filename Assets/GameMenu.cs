@@ -6,6 +6,7 @@ public class GameMenu : MonoBehaviour {
 	
 	public void PlayGame() {
 		Debug.Log("Start the god damn game!");
+		
 		m_FSM.ChangeState(State.play);
 	}
 }
