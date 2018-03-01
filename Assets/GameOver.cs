@@ -14,6 +14,7 @@ public class GameOver : MonoBehaviour {
 
 	void Start() {
 		m_countDownTimer = m_screenDelay;
+		Cursor.visible = true;
 		/*
 		if(Score.m_score != 0) {
 			m_winScreen.SetActive(true);

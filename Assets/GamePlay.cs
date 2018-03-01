@@ -8,6 +8,7 @@ public class GamePlay : MonoBehaviour {
 	public void GameOver() {
 
 		m_FSM.ChangeState(State.over);
+		
 	}
 
 }

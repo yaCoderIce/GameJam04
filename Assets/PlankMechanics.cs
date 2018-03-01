@@ -42,6 +42,7 @@ public class PlankMechanics : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		Debug.Log("Plank is still moving!");
 		//Debug.Log(this.textTest.name);
 		//this.textTest.SetActive(!this.textTest.activeSelf);
 		//this.textTest.transform.Rotate(10,0,0);
