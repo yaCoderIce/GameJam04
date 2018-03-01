@@ -9,7 +9,7 @@ public class PrizeSpawner : MonoBehaviour {
 	public Transform[] spawnPoints;
 	public Transform cContainer;
 	private int numOfSpawnedCrates;
-	//private GameObject[] spawnedContainer;
+	private GameObject[] spawnedContainer;
 
 	// Use this for initialization
 	void Start () {
@@ -29,7 +29,7 @@ public class PrizeSpawner : MonoBehaviour {
 
 	// Update is called once per frame
 	void FixedUpdate () {
-		GameObject[] spawnedContainer = GameObject.FindGameObjectsWithTag ("Respawn");
+		spawnedContainer = GameObject.FindGameObjectsWithTag ("Respawn");
 		numOfSpawnedCrates = spawnedContainer.Length;
 		Debug.Log("Number of Crates"+numOfSpawnedCrates);
 	}
