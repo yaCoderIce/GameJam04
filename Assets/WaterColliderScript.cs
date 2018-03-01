@@ -17,6 +17,9 @@ public class WaterColliderScript : MonoBehaviour {
 	void OnTriggerEnter(Collider col){
 		if (col.gameObject.name.Equals("FPSController")){
 			Debug.Log("You are dead! Johnny Depp!");
+		} else if (col.gameObject.name.Equals("crate")) {
+			GameObject crate = col.gameObject;
+			Destroy(crate);
 		}
 
 	}
