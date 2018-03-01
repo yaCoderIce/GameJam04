@@ -14,6 +14,7 @@ public class GameOver : MonoBehaviour {
 
 	void Start() {
 		m_countDownTimer = m_screenDelay;
+		/*
 		if(Score.m_score != 0) {
 			m_winScreen.SetActive(true);
 			m_looseScreen.SetActive(false);
@@ -21,6 +22,7 @@ public class GameOver : MonoBehaviour {
 			m_winScreen.SetActive(false);
 			m_looseScreen.SetActive(true);
 		}
+		*/
 	}
 
 	void Update() {
