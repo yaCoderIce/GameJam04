@@ -31,6 +31,6 @@ public class PrizeSpawner : MonoBehaviour {
 	void FixedUpdate () {
 		spawnedContainer = GameObject.FindGameObjectsWithTag ("Respawn");
 		numOfSpawnedCrates = spawnedContainer.Length;
-		Debug.Log("Number of Crates"+numOfSpawnedCrates);
+		//Debug.Log("Number of Crates"+numOfSpawnedCrates);
 	}
 }

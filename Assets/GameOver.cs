@@ -34,6 +34,11 @@ public class GameOver : MonoBehaviour {
 		}
 	}
 
+	public void RestartGame() {
+
+		m_FSM.ChangeState(State.play);
+	}
+
 
 }
 

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TimerMechanics : MonoBehaviour {
+
+	public GamePlay gamePlayState;
     private float timer;
     private TextMesh threeDText;
 
@@ -28,6 +30,8 @@ public class TimerMechanics : MonoBehaviour {
 			} 
 
 			this.threeDText.text = "Time Remaining: " + alignmentText + displayTimer + "s";
+		} else {
+			gamePlayState.GameOver();
 		}
 	}
 }
