@@ -8,6 +8,8 @@ public class PrizeSpawner : MonoBehaviour {
 	public GameObject cratePreFab;
 	public Transform[] spawnPoints;
 	public Transform cContainer;
+	private int numOfSpawnedCrates;
+	//private GameObject[] spawnedContainer;
 
 	// Use this for initialization
 	void Start () {
@@ -15,16 +17,20 @@ public class PrizeSpawner : MonoBehaviour {
 	}
 	
 	void Spawn(){
-		spawnTimeDelay=Random.Range(5,10);
-		int spawnPointIndex = Random.Range(0, spawnPoints.Length);
-		Transform spawnPoint = spawnPoints[spawnPointIndex];
-		GameObject nCrate = Instantiate(cratePreFab,spawnPoint.position,spawnPoint.rotation);
-		nCrate.name="crate";
-		nCrate.transform.parent = cContainer.transform;
+		if (numOfSpawnedCrates < 5){
+			spawnTimeDelay=Random.Range(3,10);
+			int spawnPointIndex = Random.Range(0, spawnPoints.Length);
+			Transform spawnPoint = spawnPoints[spawnPointIndex];
+			GameObject nCrate = Instantiate(cratePreFab,spawnPoint.position,spawnPoint.rotation);
+			nCrate.name="crate";
+			nCrate.transform.parent = cContainer.transform;
+		}
 	}
 
 	// Update is called once per frame
-	void Update () {
-		
+	void FixedUpdate () {
+		GameObject[] spawnedContainer = GameObject.FindGameObjectsWithTag ("Respawn");
+		numOfSpawnedCrates = spawnedContainer.Length;
+		Debug.Log("Number of Crates"+numOfSpawnedCrates);
 	}
 }
