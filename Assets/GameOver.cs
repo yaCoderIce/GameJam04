@@ -29,7 +29,7 @@ public class GameOver : MonoBehaviour {
 	void Update() {
 		if(m_countDownTimer <= 0) {
 			m_countDownTimer = m_screenDelay;
-			m_FSM.ChangeState(State.menu);
+			//m_FSM.ChangeState(State.menu);
 		} else {
 			m_countDownTimer -= Time.deltaTime;
 		}
@@ -37,7 +37,7 @@ public class GameOver : MonoBehaviour {
 
 	public void RestartGame() {
 
-		m_FSM.ChangeState(State.play);
+		Application.Quit();
 	}
 
 
