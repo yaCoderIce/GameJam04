@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class chestMechanics : MonoBehaviour {
     
-
+	public FSM m_FSM;
     // Use this for initialization
     void Start () {
 		
@@ -19,7 +19,8 @@ public class chestMechanics : MonoBehaviour {
 		//Debug.Log(col.gameObject.name);
 		if (col.gameObject.name.Equals("FPSController")){
 			Debug.Log(this.transform.parent.name);	
-			BuddyGuy.treasureScore++;
+			m_FSM.AddToTreasure(1);
+			Debug.Log(m_FSM.m_gameState);
 			GameObject chest = this.transform.parent.gameObject;
 			Destroy(chest);
 		}

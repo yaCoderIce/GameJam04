@@ -1,20 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class ScoreMechanic : MonoBehaviour {
-    private TextMesh scoreText;
+public class EndScoreDisplay : MonoBehaviour {
+	public Text scoreText;
 
 	public FSM m_FSM;
 
+
     // Use this for initialization
     void Start () {
-		
-		
+		scoreText.text = m_FSM.treasureScore + "";
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		this.scoreText.text = "Treasures: " + m_FSM.treasureScore;
+		
 	}
 }

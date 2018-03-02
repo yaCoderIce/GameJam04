@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class PlankMechanics : MonoBehaviour {
 
+	public GamePlay gamePlayState;
 	public float m_sway;
 	public int m_swingCounter;
 
@@ -41,10 +42,10 @@ public class PlankMechanics : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		Debug.Log("Plank is still moving!");
 		//Debug.Log(this.textTest.name);
 		//this.textTest.SetActive(!this.textTest.activeSelf);
 		//this.textTest.transform.Rotate(10,0,0);
-		
 		counter += 1;
 		if (counter % 2 == 0){
 			
