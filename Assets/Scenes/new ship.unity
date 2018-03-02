@@ -238,18 +238,7 @@ Prefab:
       propertyPath: m_Name
       value: crate
       objectReference: {fileID: 0}
-    - target: {fileID: 114420707551911136, guid: 2cf0e8deac73a134fae84b3f6cab9be7,
-        type: 2}
-      propertyPath: treasContainer
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 65474889689976052, guid: 2cf0e8deac73a134fae84b3f6cab9be7,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 65474889689976052, guid: 2cf0e8deac73a134fae84b3f6cab9be7, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2cf0e8deac73a134fae84b3f6cab9be7, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &197765582
@@ -1088,23 +1077,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1203818697}
---- !u!1 &1245656496 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1264853678383388, guid: 2cf0e8deac73a134fae84b3f6cab9be7,
-    type: 2}
-  m_PrefabInternal: {fileID: 100784472}
---- !u!135 &1245656498
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1245656496}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 8
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1253833174
 GameObject:
   m_ObjectHideFlags: 0
@@ -1399,8 +1371,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1323000647}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.54, y: 1.9, z: 13.83}
-  m_LocalScale: {x: 1, y: 1.392074, z: 1}
+  m_LocalPosition: {x: -3.54, y: 2.72, z: 13.83}
+  m_LocalScale: {x: 1, y: 1.7802222, z: 1}
   m_Children: []
   m_Father: {fileID: 20189336}
   m_RootOrder: 5
@@ -2513,7 +2485,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4702302146457490, guid: c2a7e8ae9a6e71043be1c44b62574bbd, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.25
+      value: 4.82
       objectReference: {fileID: 0}
     - target: {fileID: 4702302146457490, guid: c2a7e8ae9a6e71043be1c44b62574bbd, type: 2}
       propertyPath: m_LocalPosition.z
