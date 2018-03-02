@@ -5,10 +5,9 @@ using UnityEngine;
 
 public class BuddyGuy : MonoBehaviour {
 
-	public static int treasureScore;
     // Use this for initialization
     void Start () {
-		treasureScore = 0;
+		//FSM.treasureScore = 0;
 	}
 	
 	// Update is called once per frame

@@ -10,6 +10,8 @@ public enum State {
 
 public class FSM : MonoBehaviour {
 
+	public int treasureScore;
+
 	// Main-Menu -> Play -> Game Win / Game Lose -> Main-Menu
 	public GameObject[] m_goStates;
 
@@ -34,5 +36,9 @@ public class FSM : MonoBehaviour {
 
 		// enable the new state
 		m_goStates[(int)m_gameState].SetActive(true);
+	}
+
+	public void AddToTreasure(int num){
+		this.treasureScore += num;
 	}
 }

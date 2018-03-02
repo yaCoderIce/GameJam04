@@ -340,6 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93918797c06c24867ae6b586439ae000, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  treasureScore: 503
   m_goStates:
   - {fileID: 1555770753}
   - {fileID: 20189335}
@@ -1511,7 +1512,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000014188511100, guid: 5dcae5adf53292945adef517afe8041e, type: 2}
       propertyPath: m_Name
-      value: treasure_chest_closed (1)
+      value: treasure_chest_closed
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5dcae5adf53292945adef517afe8041e, type: 2}
@@ -1617,6 +1618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffce835ac5330974fb92208c082357b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_FSM: {fileID: 256196659}
 --- !u!4 &1426762022 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4702302146457490, guid: c2a7e8ae9a6e71043be1c44b62574bbd,
@@ -1974,6 +1976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0569ee50b478c8c40a9c5b5ab33bd872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_FSM: {fileID: 256196659}
 --- !u!135 &1684347467
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1997,6 +2000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0569ee50b478c8c40a9c5b5ab33bd872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_FSM: {fileID: 0}
 --- !u!1 &1803691631
 GameObject:
   m_ObjectHideFlags: 0
@@ -2203,6 +2207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0569ee50b478c8c40a9c5b5ab33bd872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_FSM: {fileID: 256196659}
 --- !u!135 &1914500506
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2226,6 +2231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0569ee50b478c8c40a9c5b5ab33bd872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_FSM: {fileID: 0}
 --- !u!1 &1990169518 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 780611a67e8e941a2b3aa96e5915a793, type: 2}
@@ -2469,6 +2475,7 @@ GameObject:
   - component: {fileID: 2082258647}
   - component: {fileID: 2082258646}
   - component: {fileID: 2082258645}
+  - component: {fileID: 2082258648}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -2553,6 +2560,19 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &2082258648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2082258643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c86fa32421a114186bf9c0a614bd2e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 2091728121}
+  m_FSM: {fileID: 256196659}
 --- !u!1001 &2085512007
 Prefab:
   m_ObjectHideFlags: 0
@@ -2609,7 +2629,6 @@ GameObject:
   - component: {fileID: 2091728119}
   - component: {fileID: 2091728122}
   - component: {fileID: 2091728121}
-  - component: {fileID: 2091728120}
   m_Layer: 0
   m_Name: EndScore
   m_TagString: Untagged
@@ -2635,17 +2654,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.39349365, y: 133}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2091728120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2091728118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c86fa32421a114186bf9c0a614bd2e88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2091728121
 MonoBehaviour:
   m_ObjectHideFlags: 0
